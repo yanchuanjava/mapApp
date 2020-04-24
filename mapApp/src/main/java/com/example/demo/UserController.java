@@ -66,9 +66,7 @@ public class UserController {
 	//插入我所记录的位置信息的操作
 	@RequestMapping(value="addMyPosition{RecordID,MyLatitude,MyLongitude,MyRecordContent,RecordTime,Day,PicturePos,Name,Desname,UserID,OpenID,ConcreteID}")
 	@ResponseBody
-	public int addmyPosition(Integer RecordID,String MyLatitude,String MyLongitude,String MyRecordContent,String RecordTime,String Day,String PicturePos,String Name,String Desname,Integer UserID,String OpenID,Integer ConcreteID) {
-		myPosition mP=new myPosition(RecordID,MyLatitude,MyLongitude,MyRecordContent,RecordTime,Day,PicturePos,Name,Desname,UserID,OpenID,ConcreteID);
-		return userService.addMyPosition(mP);
+	publi
 	}
 	 
 	//查询记录里有多少条记录的位置信息
